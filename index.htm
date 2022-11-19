@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELVO</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- https://website12340.nicepage.io/Page-1.html?version=cddc3661-7e46-4d3d-9e46-2418b99ddcb7 -->
+</head>
+
+<body>
+    <nav>
+        <div class="logo">EVLO</div>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AboutUs</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Other</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+            <div class="hambar"></div>
+        </div>
+    </nav>
+    <section id="hero">
+        <div class="hero">
+            <div class="hero-text">
+                <h2>WE ARE BULIDERS</h2>
+                <h1>WE WILL BUILD YOUR DREAM</h1>
+                <hr>
+                <p>Sample text. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis
+                    suscipit ultrices.</p>
+                <div class="hero-text-a">
+                    <a class="btn" href="#">OUR PORTFOLIO</a>
+                <a href="#">ABOUT US</a>
+                </div>
+            </div>
+            <img src="https://images02.nicepage.com/e3/6e/e36e61f2185bd84c29cebb9e46a4df90.png" alt="">
+        </div>
+    </section>
+
+
+    <script>
+        const navBar = document.querySelector("nav");
+        const hamburger = document.querySelector(".hamburger");
+
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navBar.classList.toggle("active");
+        })
+
+
+    </script>
+</body>
+
+</html>
