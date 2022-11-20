@@ -193,6 +193,65 @@ nav ul li a:hover::after{
 .btn:hover{
     background-color: #c2a205;
 }
+/* Welcome */
+#welcome{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 7rem 0;
+}
+.welcome-left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 520px;
+    margin-right: 2rem;
+}
+.welcome-left h2{
+    font-size: 2.3rem;
+    color: var(--yellow);
+}
+.welcome-left h1{
+    font-size: 3.4rem;
+    margin: 1.5rem 0;
+}
+.welcome-left hr{
+    width: 200px;
+    margin: 1.5rem 0;
+}
+.welcome-left p{
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    color: rgb(169, 169, 169);
+    font-style: italic;
+}
+.welcome-right{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 600px;
+    margin-left: 2.5rem;
+}
+.welcome-right p{
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: var(--black);
+}
+.welcome-right a{
+    padding: 1.5rem 3rem;
+    font-size: 1.8rem;
+    margin-top: 4rem;
+}
+@media screen and (max-width:1300px) {
+    .welcome-right {
+        width: 380px;
+    }
+    .welcome-left {
+        width: 380px;
+    }
+}
 @media screen and (max-width:1020px) {
     .hero {
         display: flex;
@@ -232,6 +291,12 @@ nav ul li a:hover::after{
     .hamburger{
         display: inherit;
     }
+    .welcome-left h1 {
+        font-size: 3rem;
+    }
+    .welcome-left {
+        width: 270px;
+    }
 }
 @media screen and (max-width:820px) {
     .hero-text h1 {
@@ -254,8 +319,19 @@ nav ul li a:hover::after{
 @media screen and (max-width:000px) {
     
 }
-@media screen and (max-width:000px) {
-    
+@media screen and (max-width:760px) {
+    #welcome{
+        flex-direction: column;
+        align-items: center;
+    }
+    .welcome-left ,.welcome-right{
+        width: 80%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .welcome-right{
+        margin-top: 2.5rem;
+    }
 }
 @media screen and (max-width:700px) {
     .hero-text p {
