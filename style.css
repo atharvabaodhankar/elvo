@@ -244,6 +244,55 @@ nav ul li a:hover::after{
     font-size: 1.8rem;
     margin-top: 4rem;
 }
+/* Show */
+#show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 0;
+}
+.show{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.show-box{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images01.nicepage.com/bf/37/bf37f8217e4b71feb26707d632c6845d.png);
+    background-position: center;
+    background-size: cover;
+    flex-basis: 33.3%;
+    height: 320px;
+    padding: 1.5rem;
+}
+.show-box:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images01.nicepage.com/45/78/457883519366bc77e9ffb4294b44f8df.png);
+}
+.show-box:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images01.nicepage.com/35/97/35970472e6f88da51190947c84ba6f2a.png);
+}
+.show-box-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.show-box-desc h1{
+    font-size: 2.5rem;
+}
+.show-box-desc hr{
+    width: 80px;
+    margin: 1.5rem 0;
+}
+.show-box-desc p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
 @media screen and (max-width:1300px) {
     .welcome-right {
         width: 380px;
@@ -311,6 +360,15 @@ nav ul li a:hover::after{
     }
     #hero {
         align-items: center;
+    }
+    .show{
+        flex-direction: column;
+        height: 960px;
+        flex-wrap: wrap;
+    }
+    .show-box{
+        width: 100%;
+        justify-content: flex-start;
     }
 }
 @media screen and (max-width:000px) {
