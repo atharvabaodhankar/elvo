@@ -540,6 +540,69 @@ nav ul li a:hover::after {
 .pronum-box hr{
     width: 60px;
 }
+/* Working */
+#working{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+.working-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.working-header h2{
+    font-size: 2.5rem ;
+    color: var(--yellow);
+    font-weight: 500;
+}
+.working-header h1{
+    font-size: 3.3rem;
+    margin: 1.5rem 0;
+    font-weight: 900;
+}
+.working-header hr{
+    width: 80px;
+}
+.working{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6rem;
+}
+.working-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 230px;
+    margin: 2.5rem 2.5rem;
+}
+.working-box i{
+    font-size: 3.3rem;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+    color: #fff;
+    border-radius: 50%;
+}
+.working-box h1{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+.working-box p{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: var(--black);
+}
 @media screen and (max-width:1300px) {
     .welcome-right {
         width: 380px;
@@ -556,6 +619,10 @@ nav ul li a:hover::after {
     }
     .offers {
         width: 990px;
+    }
+    .working-box {
+        width: 220px;
+        margin: 2.5rem 1.5rem;
     }
 }
 @media screen and (max-width:1020px) {
@@ -578,6 +645,12 @@ nav ul li a:hover::after {
     }
     .offers-box i {
         width: 200px;
+    }
+    .working{
+        flex-wrap: wrap;
+    }
+    .working-box{
+        width: 40%;
     }
 }
 
@@ -748,6 +821,12 @@ nav ul li a:hover::after {
     }
     .pronum-box {
         width: 90%;
+    }
+    .working-box{
+        width: 95%;
+    }
+    .working-header{
+        padding: 0 2.5rem;
     }
 }
 
