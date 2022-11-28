@@ -705,7 +705,89 @@ nav ul li a:hover::after {
 #quality img:hover{
     transform: scale(1.1);
 }
-
+/* Blog */
+#blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8rem 0;
+}
+.blog-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.blog-header h2{
+    font-size: 2.9rem;
+    font-weight: 400;
+    color: var(--yellow);
+}
+.blog-header h1{
+    font-size: 3.5rem;
+    color: #000;
+    margin: 1.5rem 0;
+}
+.blog-header hr{
+    width: 70px;
+}
+.blog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.blog-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 380px;
+    margin: 0 1.5rem;
+}
+.blog-box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-box-img {
+    width: 100%;
+    height: 290px;
+    margin-bottom: 1.5rem;
+}
+.blog-box-desc{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align:left;
+    padding: 1.5rem;
+}
+.blog-box-desc h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+.blog-box-desc h2{
+    font-size: 1.6rem;
+    color: #bababa;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+.blog-box-desc p{
+    line-height: 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--black);
+}
+.blog-box-desc a{
+    font-size: 1.8rem;
+    color: var(--black);
+    padding: .5rem ;
+    border-bottom: 1px solid var(--black);
+    margin-top: 2rem;
+}
 @media screen and (max-width:1300px) {
     .welcome-right {
         width: 380px;
@@ -713,6 +795,12 @@ nav ul li a:hover::after {
 
     .welcome-left {
         width: 380px;
+    }
+    .blog-box {
+        width: 300px;
+    }
+    .blog-box-img {
+        height: 210px;
     }
 }
 
@@ -730,6 +818,7 @@ nav ul li a:hover::after {
     .testimonials-box {
         width: 280px;
     }
+    
 }
 @media screen and (max-width:1020px) {
     .hero {
@@ -764,7 +853,16 @@ nav ul li a:hover::after {
     #quality{
         flex-wrap: wrap;
     }
-
+    .blog{
+        flex-wrap: wrap;
+    }
+    .blog-box {
+        width: 350px;
+        margin: 2rem 1.5rem;
+    }
+    .blog-box-img {
+        height: 240px;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -872,6 +970,9 @@ nav ul li a:hover::after {
     .welcome-right {
         margin-top: 2.5rem;
     }
+    .blog-box {
+        width: 500px;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -918,6 +1019,15 @@ nav ul li a:hover::after {
     }
     .offers-box {
         width: 80%;
+    }
+    .blog-box {
+        width: 90%;
+    }
+    .blog-box-desc h1 {
+        font-size: 2.4rem;
+    }
+    .blog-box-desc {
+        padding: 1.5rem 1rem;
     }
 }
 
