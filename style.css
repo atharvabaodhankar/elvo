@@ -788,6 +788,61 @@ nav ul li a:hover::after {
     border-bottom: 1px solid var(--black);
     margin-top: 2rem;
 }
+/* Purchase */
+#purchase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem 2.5rem;
+    background-color: var(--yellow);
+}
+.purchase{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1000px;
+    color: #fff;
+}
+.purchase-left h1{
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+.purchase-left p{
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    line-height: 2.5rem;
+}
+.purchase a{
+    font-size: 2rem;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1.5rem 2.5rem;
+    transition: all .4s ease;
+}
+.purchase a:hover{
+    background-color: #ffff;
+    color: var(--black);
+}
+/* Footer */
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 6rem 3rem;
+    background-color: var(--black);
+}
+#footer p{
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 2.5rem;
+}
+#footer p a{
+    font-size: 1.8rem;
+    color: var(--yellow);
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
 @media screen and (max-width:1300px) {
     .welcome-right {
         width: 380px;
@@ -913,6 +968,15 @@ nav ul li a:hover::after {
         width: 45%;
         margin: 3rem 1.5rem;
     }
+    .purchase{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .purchase a{
+        margin-top: 3rem;
+    }
+    
 }
 
 @media screen and (max-width:820px) {
@@ -1028,6 +1092,9 @@ nav ul li a:hover::after {
     }
     .blog-box-desc {
         padding: 1.5rem 1rem;
+    }
+    .purchase-left h1 {
+        font-size: 3.5rem;
     }
 }
 
